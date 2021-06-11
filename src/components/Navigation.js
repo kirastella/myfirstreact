@@ -1,14 +1,15 @@
 import React from 'react';
+import NavLink from './NavLink';
 
 const Navigation = () => {
     return ( 
         <nav>
             <ul>
                 <li>
-                    <a href="#">Dette er nav test 1</a>
+                    <NavLink to="/">Home</NavLink>
                 </li>
                 <li>
-                    <a href="#">Dette er nav test 2</a>
+                    <NavLink to="/contact">Contact</NavLink>
                 </li>
             </ul>
         </nav>

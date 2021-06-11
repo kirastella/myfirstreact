@@ -1,9 +1,16 @@
 import React from 'react';
+import { Router } from '@reach/router';
+import Home from './Home';
+import Contact from './Contact';
+
 
 const Main = () => {
     return ( 
         <main>
-            <h2>Dette er main</h2>
+            <Router>
+                <Home path="/" />
+                <Contact path="contact" />
+            </Router>
         </main>
      );
 }
